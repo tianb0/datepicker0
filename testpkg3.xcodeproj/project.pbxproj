@@ -20,8 +20,8 @@
 		84D5F0C529D20A9A00697D94 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5F0C429D20A9A00697D94 /* ItemListViewController.swift */; };
 		84D5F0C729D2128500697D94 /* String+Truncate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5F0C629D2128500697D94 /* String+Truncate.swift */; };
 		84D5F0C929D2213900697D94 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5F0C829D2213900697D94 /* ItemDetailViewController.swift */; };
-		84D5F12D29D25AB100697D94 /* CalendarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5F12929D259B900697D94 /* CalendarControl.framework */; };
-		84D5F12E29D25AB100697D94 /* CalendarControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5F12929D259B900697D94 /* CalendarControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84D5F13129D2627E00697D94 /* CalendarControl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5F13029D2627E00697D94 /* CalendarControl.xcframework */; };
+		84D5F13229D2627E00697D94 /* CalendarControl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5F13029D2627E00697D94 /* CalendarControl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,20 +39,6 @@
 			remoteGlobalIDString = 84D5F08629D207A900697D94;
 			remoteInfo = testpkg3;
 		};
-		84D5F12829D259B900697D94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84D5F12329D259B900697D94 /* CalendarControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84D5F0DD29D254F400697D94;
-			remoteInfo = CalendarControl;
-		};
-		84D5F12A29D259B900697D94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84D5F12329D259B900697D94 /* CalendarControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84D5F0E729D254F400697D94;
-			remoteInfo = CalendarControlTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84D5F12E29D25AB100697D94 /* CalendarControl.framework in Embed Frameworks */,
+				84D5F13229D2627E00697D94 /* CalendarControl.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +73,7 @@
 		84D5F0C429D20A9A00697D94 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		84D5F0C629D2128500697D94 /* String+Truncate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Truncate.swift"; sourceTree = "<group>"; };
 		84D5F0C829D2213900697D94 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
-		84D5F12329D259B900697D94 /* CalendarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CalendarControl.xcodeproj; path = "../../testpkg-framework/CalendarControl/CalendarControl.xcodeproj"; sourceTree = "<group>"; };
+		84D5F13029D2627E00697D94 /* CalendarControl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CalendarControl.xcframework; path = "../testpkg-framework/CalendarControl/build/CalendarControl.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D5F12D29D25AB100697D94 /* CalendarControl.framework in Frameworks */,
+				84D5F13129D2627E00697D94 /* CalendarControl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +126,6 @@
 		84D5F08929D207A900697D94 /* testpkg3 */ = {
 			isa = PBXGroup;
 			children = (
-				84D5F12329D259B900697D94 /* CalendarControl.xcodeproj */,
 				84D5F0C129D20A4500697D94 /* ItemListViewController */,
 				84D5F0BA29D208B300697D94 /* Models */,
 				84D5F08A29D207A900697D94 /* AppDelegate.swift */,
@@ -189,18 +174,10 @@
 			path = ItemListViewController;
 			sourceTree = "<group>";
 		};
-		84D5F12429D259B900697D94 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84D5F12929D259B900697D94 /* CalendarControl.framework */,
-				84D5F12B29D259B900697D94 /* CalendarControlTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		84D5F12C29D25AB100697D94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84D5F13029D2627E00697D94 /* CalendarControl.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,12 +273,6 @@
 			mainGroup = 84D5F07E29D207A900697D94;
 			productRefGroup = 84D5F08829D207A900697D94 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 84D5F12429D259B900697D94 /* Products */;
-					ProjectRef = 84D5F12329D259B900697D94 /* CalendarControl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				84D5F08629D207A900697D94 /* testpkg3 */,
@@ -310,23 +281,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		84D5F12929D259B900697D94 /* CalendarControl.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CalendarControl.framework;
-			remoteRef = 84D5F12829D259B900697D94 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		84D5F12B29D259B900697D94 /* CalendarControlTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CalendarControlTests.xctest;
-			remoteRef = 84D5F12A29D259B900697D94 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84D5F08529D207A900697D94 /* Resources */ = {
